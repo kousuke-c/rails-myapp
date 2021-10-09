@@ -1,0 +1,40 @@
+<h3>スケジュール確認</h3>
+ 
+    <table>
+      <tr>
+        <th>タイトル</th>
+        <td><%= @plan.title %></td>
+      </tr>
+      <tr>
+        <th>開始日</th>
+        <td><%= @plan.start %></td>
+      </tr>
+       <tr>
+        <th>終了日</th>
+        <td><%= @plan.end %></td>
+      </tr>
+      <tr>
+        <th>更新日時</th>
+        <td><%= @plan.updated_at .to_s(:datetime_jp) %></td>
+      </tr>
+      <tr>
+        <th>終日</th>
+       <td><% if @plan.dayAll%>
+                <p>○</p>
+                <% end %></td>
+       </tr>
+      <tr>
+        <th>スケジュールメモ</th>
+        <td><%= @plan.memo %></td>
+      </tr>
+    </table>
+ 
+    <div>
+      
+      <ul>
+        <li><%= link_to "ユーザー情報一覧に戻る","/" %></li>
+        <li><%= link_to "スケジュールを編集する",edit_schedule_path(@plan) %></li>
+        <li><%= link_to "削除", schedule_path(@plan), method: :delete, data: { confirm: "本当に削除しますか？" } %></li>
+      </ul>
+      
+    </div>

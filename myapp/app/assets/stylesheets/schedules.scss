@@ -1,0 +1,42 @@
+
+// Place all the styles related to the schedules controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+  table th {
+        background-color: #ffc0cb;
+        padding: 10px 20px;
+    }
+    
+     table td {
+        background-color: #f9ecd5;
+        padding: 10px 20px;
+    }
+ 
+    .notice {
+        background-color: #ccf;
+        padding: 5px;
+    }
+    
+    li {
+    text-decoration: none;
+    }
+    
+    header, footer {
+    width: 100%;
+    padding: 10px;
+    background: #c52f24;
+    color: #fff;
+    margin: 0px;
+    }
+    
+    table td input{
+     width: 100%;
+    }
+    
+    table td p{
+      text-align: center;
+    }
+    
+    ul {
+  list-style: none;
+}

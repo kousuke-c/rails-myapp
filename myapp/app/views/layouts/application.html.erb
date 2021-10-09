@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Myapp2</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <header>
+    <h1>Ruby on Rails スケジュール管理アプリ</h1>
+   </header>
+  
+   <%= yield %>
+   
+   <footer>
+     
+   <h1>現在の日時：<%=Time.zone.now.to_s(:datetime_jp)%> スケジュール合計:<%=Schedule.count %></h1>
+    
+    
+   </footer>
+   
+  </body>
+</html>
